@@ -2,7 +2,7 @@ class Dog
 
   attr_accessor :mood 
   attr_writer
-  attr_reader :name 
+  attr_reader :name, :count
 
 def initialize(name, mood="nervous")
   @name = name 
