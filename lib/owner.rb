@@ -42,8 +42,8 @@ class Owner
   end 
   
   def buy_dog(name)
-  #make a new instance of pet, initialize with name 
-  #associate that new pet instance to owner, adding it to @pets
+  doggie = Dog.new(name)
+  @pets[:dogs] << doggie 
   end 
   
   def walk_dogs
