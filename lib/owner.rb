@@ -1,7 +1,6 @@
 class Owner
 
 @@all = []
-@@count = @@all.size
 
   attr_accessor :pets, :name
   attr_reader :name, :species, :say_species, :all
@@ -15,7 +14,7 @@ class Owner
   end 
 
   def self.count 
-    @@count 
+    @@all.size
   end 
   
   def name 
