@@ -72,11 +72,20 @@ class Owner
   end 
   
   def sell_pets
+@pets[:dogs].each do |dog|
+  Dog.new(dog.name)
+end 
 
+@pets[:cats].each do |cat|
+  Cat.new(cat.name)
+end
+
+@pets[:fishes].each do |fish|
+  Fish.new(fish.name)
+end 
   
    @pets.each do |pet_class, pet|
        pet.clear
-       pet.new("pet")
    end 
  
  end 
