@@ -76,7 +76,7 @@ class Owner
   
    @pets.each do |pet_class, pet|
        pet.clear
-       pet.new(pet)
+       pet.new("pet")
    end 
  
  end 
