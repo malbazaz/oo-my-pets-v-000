@@ -71,9 +71,10 @@ class Owner
   "I have #{@pets[:fishes].count} fish, #{@pets[:dogs].count} dog(s), and #{@pets[:cats].count} cat(s)."
   end 
   
-  def sell_pets 
+  def sell_pets
+  @pets.each do |
+  
    @pets.each do |pet_class, pet|
-        mood = "nervous"
        pet.clear
    end 
  
