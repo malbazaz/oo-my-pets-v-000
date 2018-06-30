@@ -73,15 +73,15 @@ class Owner
   
   def sell_pets
 @pets[:dogs].each do |dog|
-  Dog.new(dog.name)
+  dog.mood = "nervous"
 end 
 
 @pets[:cats].each do |cat|
-  Cat.new(cat.name)
+  cat.mood = "nervous"
 end
 
 @pets[:fishes].each do |fish|
-  Fish.new(fish.name)
+  fish.mood = "nervous"
 end 
   
    @pets.each do |pet_class, pet|
